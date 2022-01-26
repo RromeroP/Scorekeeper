@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team1_text"
+            style="@style/TeamText"
+            android:text="@string/team_1" />
+
+        <ImageButton
+            android:id="@+id/team1_button1"
+            style="@style/MinusButtons"/>
+
+        <TextView
+            android:id="@+id/team1_score"
+            style="@style/CounterText"
+            android:layout_centerInParent="true"
+            android:text="@string/_initial_score" />
+
+        <ImageButton
+            android:id="@+id/team1_button2"
+            style="@style/PlusButtons" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/team2_text"
+            style="@style/TeamText"
+            android:text="@string/team_2" />
+
+        <ImageButton
+            android:id="@+id/team2_button1"
+            style="@style/MinusButtons" />
+
+        <TextView
+            android:id="@+id/team2_score"
+            android:text="@string/_initial_score"
+            style="@style/CounterText" />
+
+        <ImageButton
+            android:id="@+id/team2_button2"
+            style="@style/PlusButtons" />
+    </RelativeLayout>
+
+</LinearLayout>
